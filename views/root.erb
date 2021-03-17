@@ -16,3 +16,26 @@
   <li>The word in quotes after fill_in needs to be set as an ID in the form. This is because your ship name one and two will have the same name property. Capybara needs some sort of unique indentifier, so we use id. </li>
 
 </ul>
+
+<form method="post" action="/pirates"> 
+    <label for="name"> Pirate Name</label>
+    <input type="text" name="pirate[name]"><br>
+    <label for="height"> Pirate Height</label>
+    <input type="text" name="pirate[height]"><br> 
+    <label for="weight"> Pirate Weight</label>
+    <input type="text" name="pirate[weight]"><br>
+    <label for="name"> Ship Name </label>
+    <input type="text" name="pirate[ships][][name]"><br>
+    <label for="name"> Ship Type </label>
+    <input type="text" name="pirate[ships][][type]"><br>
+    <label for="name"> Ship Booty Attributes </label>
+    <input type="text" name="pirate[ships][][booty_attributes]"><br>
+    <label for="name"> Ship Name </label>
+    <input type="text" name="pirate[ships][][name]"><br>
+    <label for="name"> Ship Type </label>
+    <input type="text" name="pirate[ships][][type]"><br>
+    <label for="name"> Ship Booty Attributes </label>
+    <input type="text" name="pirate[ships][][booty_attributes]"><br>
+    <input type="Submit" value="submit">
+  
+</form>

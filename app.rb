@@ -2,6 +2,22 @@ require './environment'
 
 module FormsLab
   class App < Sinatra::Base
+    get '/' do 
+      erb :root
+    end
+
+    get '/new' do 
+
+    end
+
+    post '/pirates' do 
+      @pirate = Pirate.new
+      @pirate.name = params[:pirate][:name]
+      @pirate.weight = params[:pirate][:weight]
+      @pirate.height = params[:pirate][:height]
+      erb :show
+
+    end
 
     # code other routes/actions here
 
