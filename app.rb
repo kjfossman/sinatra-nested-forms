@@ -17,8 +17,6 @@ module FormsLab
       @pirate.height = params[:pirate][:height]
       erb :"pirates/show"
     end
-  
-    # code other routes/actions here
 
   end
 end
