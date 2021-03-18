@@ -4,11 +4,12 @@
    <%= @pirate.weight %>
    </h1>
 
-# <h2>
-#     <% Pirate.all.each do |pirate| %>
-#         <%= pirate.ships.name %>
-#         <%= pirate.ships.type %>
-#         <%= pirate.ships.booty %>
-#     </h2>
+   <h2>Ships</h2>
+   <% Ship.all.each do |ship| %>
+    <%= ship.name %>
+    <%= ship.type %>
+    <%= ship.booty %>
+    <% end %>
+    
 
-# <h2> </h2>
+
