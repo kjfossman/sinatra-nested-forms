@@ -7,7 +7,7 @@ module FormsLab
     end
 
     get '/new' do 
-
+      erb :"pirates/new"
     end
 
     post '/pirates' do 
@@ -15,10 +15,9 @@ module FormsLab
       @pirate.name = params[:pirate][:name]
       @pirate.weight = params[:pirate][:weight]
       @pirate.height = params[:pirate][:height]
-      erb :show
-
+      erb :"pirates/show"
     end
-
+  
     # code other routes/actions here
 
   end
